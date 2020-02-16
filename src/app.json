@@ -1,0 +1,40 @@
+{
+  "pages": ["pages/index/main", "pages/about/main"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "张昌蒲计算器",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-cell": "/static/vant/cell/index",
+    "van-cell-group": "/static/vant/cell-group/index",
+    "van-panel": "/static/vant/panel/index",
+    "van-button": "/static/vant/button/index",
+    "van-collapse": "/static/vant/collapse/index",
+    "van-collapse-item": "/static/vant/collapse-item/index",
+    "van-notice-bar": "/static/vant/notice-bar/index",
+    "van-switch": "/static/vant/switch/index"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/main",
+        "iconPath": "static/tabs/home.png",
+        "selectedIconPath": "static/tabs/home-active.png"
+      },
+      {
+        "text": "关于",
+        "pagePath": "pages/about/main",
+        "iconPath": "static/tabs/orders.png",
+        "selectedIconPath": "static/tabs/orders-active.png"
+      }
+    ],
+    "position": "bottom"
+  }
+}
