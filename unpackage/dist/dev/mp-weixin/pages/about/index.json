@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "关于 | 张昌蒲计算器",
+  "usingComponents": {
+    "about-header": "/pages/about/components/header"
+  }
+}

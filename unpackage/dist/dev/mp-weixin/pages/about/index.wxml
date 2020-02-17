@@ -1,0 +1,1 @@
+<view class="app _div data-v-e5908de8"><about-header vue-id="1" class="data-v-e5908de8" bind:__l="__l"></about-header></view>

@@ -1,0 +1,18 @@
+
+.bold-self {
+	font-weight: bold;
+}
+.title-class {
+	color: grey !important;
+	text-align: center !important;
+}
+.value-class {
+	color: grey !important;
+	text-align: center !important;
+}
+
+
+.app-result.data-v-415c0ff5 {
+	margin: 15px;
+}
+
