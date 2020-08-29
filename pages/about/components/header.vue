@@ -9,7 +9,7 @@
       <img class="img-control-logo" src="/static/images/logo.png" />
     </div>
     <van-cell-group>
-      <van-cell title="应用版本" value="2.0.1" />
+      <van-cell title="应用版本" value="2.1.0" />
       <van-cell title="小程序名称" value="张昌蒲计算器" />
       <van-cell title="小程序开发者" value="Roger Shaw" />
       <van-cell title="此人的三国杀新区账号" value="ID：蒸蒸日上欧" />
@@ -17,6 +17,12 @@
         <van-switch :checked="allSelect" @change="setAllSelect" />
       </van-cell>
     </van-cell-group>
+	<div class="ad-2">
+		<ad unit-id="adunit-42f0b75787d8e5b9"></ad>
+	</div>
+	<div class="ad-2">
+		<ad unit-id="adunit-2cd35ad2fbde42d1"></ad>
+	</div>
   </div>
 </template>
 
@@ -47,5 +53,8 @@ export default {
   width: 85px;
   height: 85px;
   margin: auto 0;
+}
+.ad-2 {
+	margin-top: 25px;
 }
 </style>

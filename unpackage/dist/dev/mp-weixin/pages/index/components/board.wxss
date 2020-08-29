@@ -6,7 +6,7 @@
 }
 
 
-.app-board.data-v-0ec25abe {
+.app-board.data-v-ff6479ac {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -16,7 +16,7 @@
           justify-content: center;
   margin-bottom: 35px;
 }
-.flex-list.data-v-0ec25abe {
+.flex-list.data-v-ff6479ac {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -33,7 +33,7 @@
   padding: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
 }
-.flex-col.data-v-0ec25abe {
+.flex-col.data-v-ff6479ac {
   width: 25%;
   display: -webkit-box;
   display: -webkit-flex;

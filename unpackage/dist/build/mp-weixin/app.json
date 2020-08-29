@@ -32,13 +32,11 @@
     "position": "bottom"
   },
   "usingComponents": {
-    "van-cell": "/static/vant/cell/index",
-    "van-cell-group": "/static/vant/cell-group/index",
-    "van-panel": "/static/vant/panel/index",
-    "van-button": "/static/vant/button/index",
-    "van-collapse": "/static/vant/collapse/index",
-    "van-collapse-item": "/static/vant/collapse-item/index",
-    "van-notice-bar": "/static/vant/notice-bar/index",
-    "van-switch": "/static/vant/switch/index"
-  }
+    "van-cell": "/wxcomponents/vant/cell/index",
+    "van-cell-group": "/wxcomponents/vant/cell-group/index",
+    "van-button": "/wxcomponents/vant/button/index",
+    "van-notice-bar": "/wxcomponents/vant/notice-bar/index",
+    "van-switch": "/wxcomponents/vant/switch/index"
+  },
+  "sitemapLocation": "sitemap.json"
 }

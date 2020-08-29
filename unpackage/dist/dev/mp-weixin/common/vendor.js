@@ -1656,9 +1656,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 13:
-/*!***********************************************!*\
-  !*** E:/web/uni-app/zcp-test2/store/index.js ***!
-  \***********************************************/
+/*!***********************************************************************!*\
+  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/store/index.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8662,9 +8662,9 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 21:
-/*!*********************************************!*\
-  !*** E:/web/uni-app/zcp-test2/utils/zcp.js ***!
-  \*********************************************/
+/*!*********************************************************************!*\
+  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/utils/zcp.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8924,9 +8924,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 4:
-/*!*******************************************!*\
-  !*** E:/web/uni-app/zcp-test2/pages.json ***!
-  \*******************************************/
+/*!*******************************************************************!*\
+  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/pages.json ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9823,9 +9823,9 @@ main();
 /***/ }),
 
 /***/ 51:
-/*!**********************************************!*\
-  !*** E:/web/uni-app/zcp-test2/utils/card.js ***!
-  \**********************************************/
+/*!**********************************************************************!*\
+  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/utils/card.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9862,9 +9862,9 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 /***/ }),
 
 /***/ 7:
-/*!************************************************************!*\
-  !*** E:/web/uni-app/zcp-test2/pages.json?{"type":"style"} ***!
-  \************************************************************/
+/*!************************************************************************************!*\
+  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/pages.json?{"type":"style"} ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9874,9 +9874,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 8:
-/*!***********************************************************!*\
-  !*** E:/web/uni-app/zcp-test2/pages.json?{"type":"stat"} ***!
-  \***********************************************************/
+/*!***********************************************************************************!*\
+  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/pages.json?{"type":"stat"} ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9886,9 +9886,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 82:
-/*!**************************************************************!*\
-  !*** E:/web/uni-app/zcp-test2/components/uni-icons/icons.js ***!
-  \**************************************************************/
+/*!**************************************************************************************!*\
+  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/components/uni-icons/icons.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

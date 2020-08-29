@@ -7,6 +7,9 @@
       :result="result"
     ></app-result>
     <app-board @click="boardClick"></app-board>
+	<div class="ad-1">
+		<ad unit-id="adunit-4d481dd20e5c6f5c"></ad>
+	</div>
   </div>
 </template>
 
@@ -79,6 +82,10 @@ export default {
 
 <style scoped>
 .app {
-  margin-top: 60px;
+  margin-top: 40px;
+}
+
+.ad-1 {
+	margin-top: 5px;
 }
 </style>

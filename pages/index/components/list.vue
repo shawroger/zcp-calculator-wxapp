@@ -32,7 +32,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 .flex-list {
   width: 85%;

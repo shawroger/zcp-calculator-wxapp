@@ -1,5 +1,5 @@
 
-.app-list.data-v-3aeebff6 {
+.app-list.data-v-575e9a0a {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -13,9 +13,9 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  margin-top: 10px;
+  margin-top: 2px;
 }
-.flex-list.data-v-3aeebff6 {
+.flex-list.data-v-575e9a0a {
   width: 85%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -32,7 +32,7 @@
   padding: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
 }
-.flex-col.data-v-3aeebff6 {
+.flex-col.data-v-575e9a0a {
   width: 25%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -41,7 +41,7 @@
   -webkit-justify-content: center;
           justify-content: center;
 }
-.box.data-v-3aeebff6 {
+.box.data-v-575e9a0a {
   width: 45px;
   height: 45px;
   display: -webkit-box;
@@ -58,10 +58,10 @@
   font-family: Tahoma;
   margin: 8px 0;
 }
-.text-default.data-v-3aeebff6 {
+.text-default.data-v-575e9a0a {
   color: #606266;
 }
-.text-set.data-v-3aeebff6 {
+.text-set.data-v-575e9a0a {
   color: orange;
 }
 

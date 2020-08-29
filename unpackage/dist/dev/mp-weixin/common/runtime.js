@@ -104,7 +104,7 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"pages/index/components/board":1,"pages/index/components/list":1,"pages/index/components/result":1,"pages/about/components/header":1,"components/uni-icons/uni-icons":1};
+/******/ 		var cssChunks = {"pages/index/components/board":1,"pages/index/components/list":1,"pages/index/components/result":1,"pages/about/components/header":1,"components/uni-collapse-item/uni-collapse-item":1,"components/uni-collapse/uni-collapse":1,"components/uni-icons/uni-icons":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
