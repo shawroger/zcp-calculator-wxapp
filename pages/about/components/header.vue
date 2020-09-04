@@ -1,7 +1,7 @@
 <template>
   <div class="about-header">
     <van-notice-bar
-      text="欢迎使用张昌蒲计算器"
+      text="张昌蒲计算器经典服适应版更新了"
       left-icon="volume-o"
       mode="closeable"
     />
@@ -9,20 +9,17 @@
       <img class="img-control-logo" src="/static/images/logo.png" />
     </div>
     <van-cell-group>
-      <van-cell title="应用版本" value="2.1.0" />
+      <van-cell title="应用版本" value="3.0.0" />
       <van-cell title="小程序名称" value="张昌蒲计算器" />
-      <van-cell title="小程序开发者" value="Roger Shaw" />
-      <van-cell title="此人的三国杀新区账号" value="ID：蒸蒸日上欧" />
-      <van-cell center title="至多展示前三项筛选结果">
+      <van-cell title="小程序开发者" value="蒸蒸日上欧" />
+	  <van-cell center title="启用十张牌计算模式">
+	    <van-switch :checked="use10cards" @change="setUse10cards" />
+	  </van-cell>
+      <van-cell center title="只展示前三项筛选结果">
         <van-switch :checked="allSelect" @change="setAllSelect" />
       </van-cell>
+	  
     </van-cell-group>
-	<div class="ad-2">
-		<ad unit-id="adunit-42f0b75787d8e5b9"></ad>
-	</div>
-	<div class="ad-2">
-		<ad unit-id="adunit-2cd35ad2fbde42d1"></ad>
-	</div>
   </div>
 </template>
 
@@ -31,14 +28,20 @@ export default {
   name: "about-header",
   data() {
     return {
-      allSelect: true
+      allSelect: true,
+	  use10cards: true
     };
   },
   methods: {
     setAllSelect() {
       this.allSelect = !this.allSelect;
       this.$store.commit("SET_ALLSELECT", this.allSelect);
-    }
+    },
+		
+	setUse10cards() {
+		this.use10cards = !this.use10cards;
+		this.$store.commit("SET_USE10CARDS", this.use10cards);
+	}
   }
 };
 </script>
@@ -53,8 +56,5 @@ export default {
   width: 85px;
   height: 85px;
   margin: auto 0;
-}
-.ad-2 {
-	margin-top: 25px;
 }
 </style>

@@ -13,6 +13,6 @@ export const cards = [
 	{ name: "Q", value: 12 },
 	{ name: "K", value: 13 },
 	{ name: "CE", value: 0 },
-	{ name: "BS", value: -1 },
+	{ name: "←", value: -1 },
 	{ name: "=", value: -2 }
 ];

@@ -1,8 +1,8 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/main"],[
 /* 0 */
-/*!****************************************************************!*\
-  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/main.js ***!
-  \****************************************************************/
+/*!***************************************************************!*\
+  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/main.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30,9 +30,9 @@ createApp(app).$mount();
 /* 7 */,
 /* 8 */,
 /* 9 */
-/*!****************************************************************!*\
-  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/App.vue ***!
-  \****************************************************************/
+/*!***************************************************************!*\
+  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/App.vue ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -64,14 +64,14 @@ var component = Object(_Software_Hbuilder_HBuilderX_plugins_uniapp_cli_node_modu
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "web/restart-roger/uniapp/zcp-calculator-wxapp/App.vue"
+component.options.__file = "web/restart-roger/wxxcx/zcp-calculator-wxapp/App.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 /* 10 */
-/*!*****************************************************************************************!*\
-  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/App.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/App.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -84,9 +84,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 11 */
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/web/restart-roger/uniapp/zcp-calculator-wxapp/App.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/App.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

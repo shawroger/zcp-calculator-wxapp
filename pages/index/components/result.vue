@@ -1,7 +1,10 @@
 <template>
 	<div class="app-result">
+		
 		<uni-collapse>
 			<uni-collapse-item :open="openPanel" @change="panelClick">
+				<br />
+				<ad unit-id="adunit-42f0b75787d8e5b9"></ad>
 				<van-cell-group>
 					<van-cell title="分组一" value="分组二" title-class="title-class bold-self" value-class="value-class bold-self" />
 					<van-cell v-if="result.length === 0" title="暂无结果" title-class="title-class" />

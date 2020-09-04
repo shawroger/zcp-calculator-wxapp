@@ -44,7 +44,7 @@ export default {
     },
     boardClick(e) {
       if (e.value > 0) {
-        if (this.cards.length < 8) {
+        if (this.cards.length < 10) {
           this.cards.push(e);
           this.result = [];
           this.openPanel = false;
@@ -84,7 +84,6 @@ export default {
 .app {
   margin-top: 40px;
 }
-
 .ad-1 {
 	margin-top: 5px;
 }

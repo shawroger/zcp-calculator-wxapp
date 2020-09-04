@@ -1656,9 +1656,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 13:
-/*!***********************************************************************!*\
-  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/store/index.js ***!
-  \***********************************************************************/
+/*!**********************************************************************!*\
+  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/store/index.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1670,11 +1670,15 @@ _vue.default.use(_vuex.default);var _default =
 
 new _vuex.default.Store({
   state: {
-    allSelect: true },
+    allSelect: true,
+    use10cards: true },
 
   mutations: {
     'SET_ALLSELECT': function SET_ALLSELECT(state, payload) {
       state.allSelect = payload;
+    },
+    'SET_USE10CARDS': function SET_USE10CARDS(state, payload) {
+      state.use10cards = payload;
     } } });exports.default = _default;
 
 /***/ }),
@@ -8662,9 +8666,9 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 21:
-/*!*********************************************************************!*\
-  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/utils/zcp.js ***!
-  \*********************************************************************/
+/*!********************************************************************!*\
+  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/utils/zcp.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8924,9 +8928,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 4:
-/*!*******************************************************************!*\
-  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/pages.json ***!
-  \*******************************************************************/
+/*!******************************************************************!*\
+  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/pages.json ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9823,9 +9827,9 @@ main();
 /***/ }),
 
 /***/ 51:
-/*!**********************************************************************!*\
-  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/utils/card.js ***!
-  \**********************************************************************/
+/*!*********************************************************************!*\
+  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/utils/card.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9845,7 +9849,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.cards = vo
 { name: "Q", value: 12 },
 { name: "K", value: 13 },
 { name: "CE", value: 0 },
-{ name: "BS", value: -1 },
+{ name: "←", value: -1 },
 { name: "=", value: -2 }];exports.cards = cards;
 
 /***/ }),
@@ -9862,21 +9866,21 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 /***/ }),
 
 /***/ 7:
-/*!************************************************************************************!*\
-  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/pages.json?{"type":"style"} ***!
-  \************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/pages.json?{"type":"style"} ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "张昌蒲计算器" }, "pages/about/index": { "navigationBarTitleText": "关于 | 张昌蒲计算器" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "张昌蒲计算器", "usingComponents": { "app-list": "/pages/index/components/list", "app-board": "/pages/index/components/board", "app-result": "/pages/index/components/result" }, "usingAutoImportComponents": {} }, "pages/about/index": { "navigationBarTitleText": "关于 | 张昌蒲计算器", "usingComponents": { "about-header": "/pages/about/components/header" }, "usingAutoImportComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 
 /***/ 8:
-/*!***********************************************************************************!*\
-  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/pages.json?{"type":"stat"} ***!
-  \***********************************************************************************/
+/*!**********************************************************************************!*\
+  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/pages.json?{"type":"stat"} ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9886,9 +9890,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 82:
-/*!**************************************************************************************!*\
-  !*** E:/web/restart-roger/uniapp/zcp-calculator-wxapp/components/uni-icons/icons.js ***!
-  \**************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/components/uni-icons/icons.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
