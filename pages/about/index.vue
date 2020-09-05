@@ -5,14 +5,18 @@
 </template>
 
 <script>
+	
 import aboutHeader from "./components/header";
+
 export default {
   data() {
-    return {};
+    return {
+		
+	};
   },
   components: {
     aboutHeader
-  }
+  },
 };
 </script>
 

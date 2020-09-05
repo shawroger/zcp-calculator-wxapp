@@ -138,8 +138,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-
-
 {
   name: 'app-result',
   components: { uniCollapse: uniCollapse, uniCollapseItem: uniCollapseItem },
