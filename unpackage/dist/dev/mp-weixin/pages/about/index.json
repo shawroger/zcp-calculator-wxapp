@@ -1,6 +1,8 @@
 {
-  "navigationBarTitleText": "关于 | 张昌蒲计算器",
+  "navigationBarTitleText": "关于",
   "usingComponents": {
-    "about-header": "/pages/about/components/header"
+    "uni-list": "/components/uni-list/uni-list",
+    "uni-list-item": "/components/uni-list-item/uni-list-item",
+    "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar"
   }
 }

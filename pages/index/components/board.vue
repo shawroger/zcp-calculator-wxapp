@@ -3,13 +3,12 @@
     
     <div class="flex-list">
       <div class="flex-col" v-for="(item, index) in cards" :key="index">
-        <van-button
-          class="design-button"
+        <button
           plain
           type="default"
           @click="btnClick(item)"
-          >{{ item.name }}</van-button
-        >
+          >{{ item.name }}
+		</button>
       </div>
     </div> 
   </div>
@@ -36,12 +35,18 @@ export default {
 };
 </script>
 
-<style>
-.design-button {
+<style scoped>
+button {
   width: 55px !important;
   margin-bottom: 5px;
   color: grey;
+  font-size: 15px;
 }
+
+button[type=default][plain] {
+	border: 0.5px solid lightgrey;
+}
+
 </style>
 
 <style scoped>

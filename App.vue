@@ -1,8 +1,5 @@
 <script>
-export default {
-  created () {
-  }
-}
+export default {}
 </script>
 
 <style>

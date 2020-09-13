@@ -737,7 +737,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -1656,9 +1656,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 13:
-/*!**********************************************************************!*\
-  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/store/index.js ***!
-  \**********************************************************************/
+/*!************************************************************************!*\
+  !*** E:/web/restart-roger/uni-app/zcp-calculator-wxapp/store/index.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1670,15 +1670,11 @@ _vue.default.use(_vuex.default);var _default =
 
 new _vuex.default.Store({
   state: {
-    allSelect: true,
-    use10cards: true },
+    allSelect: true },
 
   mutations: {
     'SET_ALLSELECT': function SET_ALLSELECT(state, payload) {
       state.allSelect = payload;
-    },
-    'SET_USE10CARDS': function SET_USE10CARDS(state, payload) {
-      state.use10cards = payload;
     } } });exports.default = _default;
 
 /***/ }),
@@ -2631,6 +2627,112 @@ var index_esm = {
 
 /* harmony default export */ __webpack_exports__["default"] = (index_esm);
 
+
+/***/ }),
+
+/***/ 155:
+/*!***************************************************************************************!*\
+  !*** E:/web/restart-roger/uni-app/zcp-calculator-wxapp/components/uni-icons/icons.js ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  'contact': "\uE100",
+  'person': "\uE101",
+  'personadd': "\uE102",
+  'contact-filled': "\uE130",
+  'person-filled': "\uE131",
+  'personadd-filled': "\uE132",
+  'phone': "\uE200",
+  'email': "\uE201",
+  'chatbubble': "\uE202",
+  'chatboxes': "\uE203",
+  'phone-filled': "\uE230",
+  'email-filled': "\uE231",
+  'chatbubble-filled': "\uE232",
+  'chatboxes-filled': "\uE233",
+  'weibo': "\uE260",
+  'weixin': "\uE261",
+  'pengyouquan': "\uE262",
+  'chat': "\uE263",
+  'qq': "\uE264",
+  'videocam': "\uE300",
+  'camera': "\uE301",
+  'mic': "\uE302",
+  'location': "\uE303",
+  'mic-filled': "\uE332",
+  'speech': "\uE332",
+  'location-filled': "\uE333",
+  'micoff': "\uE360",
+  'image': "\uE363",
+  'map': "\uE364",
+  'compose': "\uE400",
+  'trash': "\uE401",
+  'upload': "\uE402",
+  'download': "\uE403",
+  'close': "\uE404",
+  'redo': "\uE405",
+  'undo': "\uE406",
+  'refresh': "\uE407",
+  'star': "\uE408",
+  'plus': "\uE409",
+  'minus': "\uE410",
+  'circle': "\uE411",
+  'checkbox': "\uE411",
+  'close-filled': "\uE434",
+  'clear': "\uE434",
+  'refresh-filled': "\uE437",
+  'star-filled': "\uE438",
+  'plus-filled': "\uE439",
+  'minus-filled': "\uE440",
+  'circle-filled': "\uE441",
+  'checkbox-filled': "\uE442",
+  'closeempty': "\uE460",
+  'refreshempty': "\uE461",
+  'reload': "\uE462",
+  'starhalf': "\uE463",
+  'spinner': "\uE464",
+  'spinner-cycle': "\uE465",
+  'search': "\uE466",
+  'plusempty': "\uE468",
+  'forward': "\uE470",
+  'back': "\uE471",
+  'left-nav': "\uE471",
+  'checkmarkempty': "\uE472",
+  'home': "\uE500",
+  'navigate': "\uE501",
+  'gear': "\uE502",
+  'paperplane': "\uE503",
+  'info': "\uE504",
+  'help': "\uE505",
+  'locked': "\uE506",
+  'more': "\uE507",
+  'flag': "\uE508",
+  'home-filled': "\uE530",
+  'gear-filled': "\uE532",
+  'info-filled': "\uE534",
+  'help-filled': "\uE535",
+  'more-filled': "\uE537",
+  'settings': "\uE560",
+  'list': "\uE562",
+  'bars': "\uE563",
+  'loop': "\uE565",
+  'paperclip': "\uE567",
+  'eye': "\uE568",
+  'arrowup': "\uE580",
+  'arrowdown': "\uE581",
+  'arrowleft': "\uE582",
+  'arrowright': "\uE583",
+  'arrowthinup': "\uE584",
+  'arrowthindown': "\uE585",
+  'arrowthinleft': "\uE586",
+  'arrowthinright': "\uE587",
+  'pulldown': "\uE588",
+  'closefill': "\uE589",
+  'sound': "\uE590",
+  'scan': "\uE612" };exports.default = _default;
 
 /***/ }),
 
@@ -8166,7 +8268,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8187,14 +8289,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -8270,7 +8372,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -8665,10 +8767,10 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 21:
-/*!********************************************************************!*\
-  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/utils/zcp.js ***!
-  \********************************************************************/
+/***/ 29:
+/*!**********************************************************************!*\
+  !*** E:/web/restart-roger/uni-app/zcp-calculator-wxapp/utils/zcp.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8927,10 +9029,207 @@ module.exports = g;
 
 /***/ }),
 
+/***/ 38:
+/*!************************************************************************!*\
+  !*** E:/web/restart-roger/uni-app/zcp-calculator-wxapp/utils/mizhu.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.filterSameItem = filterSameItem;exports.Mizhu = exports.allErgodic = exports.ergodic = exports.produceOrder = exports.chooseCards = exports.copyArr = exports.sum = void 0;function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}
+/**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       * 进行数组求和
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       * @param arr 目标数组
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       */
+var sum = function sum(arr) {return (
+    arr.reduce(function (total, currentValue) {return total + currentValue;}, 0));};
+
+
+/**
+                                                                                      * 复制数组
+                                                                                      * @param arr 待复制数组
+                                                                                      */exports.sum = sum;
+var copyArr = function copyArr(arr) {
+  var result = [];
+  arr.forEach(function (e) {
+    e.forEach(function (v) {
+      result.push(v);
+    });
+  });
+  return result;
+};
+
+
+/**
+    * 摘取数组的组合片段
+    * @param arr 目标数组
+    */exports.copyArr = copyArr;
+var chooseCards = function chooseCards(
+arr)
+{
+  var result = [];
+  var allVals = Array(arr.length).
+  fill(0).
+  map(function (_v, i) {return i;});
+  allErgodic(arr.length).forEach(function (e) {
+    var temp1 = [];
+    var temp2 = [];
+    e.forEach(function (v) {
+      temp1.push(arr[v]);
+    });
+    allVals.forEach(function (v) {
+      if (!e.includes(v)) {
+        temp2.push(arr[v]);
+      }
+    });
+    result.push([temp1, temp2]);
+  });
+  return result;
+};
+
+/**
+    * 生成固定长度的序列
+    * @param len 数组长度
+    */exports.chooseCards = chooseCards;
+var produceOrder = function produceOrder(len) {return (
+    Array(len).
+    fill(0).
+    map(function (_v, i) {return i;}));};
+
+
+/**
+                                           * 过滤数组的重复元素
+                                           * @param arr 目标数组
+                                           */exports.produceOrder = produceOrder;
+function filterSameItem(arr) {
+  var result = [];
+  var filterFlags = [];var _iteratorNormalCompletion = true;var _didIteratorError = false;var _iteratorError = undefined;try {
+
+    for (var _iterator = arr[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {var item = _step.value;
+      var flag = item.sort().toString();
+      if (!filterFlags.includes(flag)) {
+        filterFlags.push(flag);
+        result.push(item);
+      }
+    }} catch (err) {_didIteratorError = true;_iteratorError = err;} finally {try {if (!_iteratorNormalCompletion && _iterator.return != null) {_iterator.return();}} finally {if (_didIteratorError) {throw _iteratorError;}}}
+
+  return result;
+}
+
+/**
+   * 遍历数组的组合形式 （核心代码）
+   * @param size 数组长度
+   * @param len 组合大小
+   */
+var ergodic = function ergodic(size, len) {
+  var arr = produceOrder(len);
+  var cards = [];
+
+  (function $(arr, size, result) {
+    if (size > arr.length) {
+      return;
+    } else if (size === arr.length) {
+      cards.push(copyArr([result, arr]));
+    } else {
+      for (var i = 0; i < arr.length; i++) {
+        var temp = copyArr([result]);
+        temp.push(arr[i]);
+        if (size === 1) {
+          cards.push(temp);
+        } else {
+          var tempArr = copyArr([arr]);
+          tempArr.splice(0, i + 1);
+          $(tempArr, size - 1, temp);
+        }
+      }
+    }
+  })(arr, size, []);
+  return cards;
+};
+
+/**
+    * 遍历所有长度的组合
+    * @param len 数组长度
+    */exports.ergodic = ergodic;
+var allErgodic = function allErgodic(len) {
+  var result = [];
+  for (var i = 1; i <= Math.floor(0.5 * len); i++) {
+    ergodic(i, len).forEach(function (e) {
+      result.push(e);
+    });
+  }
+  return result;
+};exports.allErgodic = allErgodic;var
+
+
+
+Logic = /*#__PURE__*/function () {function Logic() {_classCallCheck(this, Logic);}_createClass(Logic, [{ key: "calc", value: function calc(
+    arr, target) {
+      var result = [];
+      var val = chooseCards(arr);
+      if (sum(arr) === target) {
+        result.push(arr);
+      }var _iteratorNormalCompletion2 = true;var _didIteratorError2 = false;var _iteratorError2 = undefined;try {
+        for (var _iterator2 = val[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {var item = _step2.value;
+          if (sum(item[0]) === target) {
+            result.push(item[0]);
+          }
+
+          if (sum(item[1]) === target) {
+            result.push(item[1]);
+          }
+        }} catch (err) {_didIteratorError2 = true;_iteratorError2 = err;} finally {try {if (!_iteratorNormalCompletion2 && _iterator2.return != null) {_iterator2.return();}} finally {if (_didIteratorError2) {throw _iteratorError2;}}}
+
+      return filterSameItem(result).sort(
+      function (m, n) {return n.length - m.length;});
+
+    } }]);return Logic;}();var
+
+
+Mizhu = /*#__PURE__*/function () {function Mizhu() {_classCallCheck(this, Mizhu);}_createClass(Mizhu, null, [{ key: "calc", value: function calc(
+
+
+
+
+    arr) {
+      return new Logic().calc(arr, 13);
+    } }]);return Mizhu;}();exports.Mizhu = Mizhu;_defineProperty(Mizhu, "getLogic", function () {return new Logic();});
+
+/***/ }),
+
+/***/ 39:
+/*!***********************************************************************!*\
+  !*** E:/web/restart-roger/uni-app/zcp-calculator-wxapp/utils/card.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.cards = void 0;var cards = [
+{ name: "A", value: 1 },
+{ name: "2", value: 2 },
+{ name: "3", value: 3 },
+{ name: "4", value: 4 },
+{ name: "5", value: 5 },
+{ name: "6", value: 6 },
+{ name: "7", value: 7 },
+{ name: "8", value: 8 },
+{ name: "9", value: 9 },
+{ name: "10", value: 10 },
+{ name: "J", value: 11 },
+{ name: "Q", value: 12 },
+{ name: "K", value: 13 },
+{ name: "CE", value: 0 },
+{ name: "←", value: -1 },
+{ name: "=", value: -2 }];exports.cards = cards;
+
+/***/ }),
+
 /***/ 4:
-/*!******************************************************************!*\
-  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/pages.json ***!
-  \******************************************************************/
+/*!********************************************************************!*\
+  !*** E:/web/restart-roger/uni-app/zcp-calculator-wxapp/pages.json ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9826,34 +10125,6 @@ main();
 
 /***/ }),
 
-/***/ 51:
-/*!*********************************************************************!*\
-  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/utils/card.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.cards = void 0;var cards = [
-{ name: "A", value: 1 },
-{ name: "2", value: 2 },
-{ name: "3", value: 3 },
-{ name: "4", value: 4 },
-{ name: "5", value: 5 },
-{ name: "6", value: 6 },
-{ name: "7", value: 7 },
-{ name: "8", value: 8 },
-{ name: "9", value: 9 },
-{ name: "10", value: 10 },
-{ name: "J", value: 11 },
-{ name: "Q", value: 12 },
-{ name: "K", value: 13 },
-{ name: "CE", value: 0 },
-{ name: "←", value: -1 },
-{ name: "=", value: -2 }];exports.cards = cards;
-
-/***/ }),
-
 /***/ 6:
 /*!******************************************************!*\
   !*** ./node_modules/@dcloudio/uni-stat/package.json ***!
@@ -9866,132 +10137,26 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 /***/ }),
 
 /***/ 7:
-/*!***********************************************************************************!*\
-  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/pages.json?{"type":"style"} ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "张昌蒲计算器" }, "pages/about/index": { "navigationBarTitleText": "关于 | 张昌蒲计算器" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
-
-/***/ }),
-
-/***/ 8:
-/*!**********************************************************************************!*\
-  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/pages.json?{"type":"stat"} ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__7232405" };exports.default = _default;
-
-/***/ }),
-
-/***/ 82:
 /*!*************************************************************************************!*\
-  !*** E:/web/restart-roger/wxxcx/zcp-calculator-wxapp/components/uni-icons/icons.js ***!
+  !*** E:/web/restart-roger/uni-app/zcp-calculator-wxapp/pages.json?{"type":"style"} ***!
   \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  'contact': "\uE100",
-  'person': "\uE101",
-  'personadd': "\uE102",
-  'contact-filled': "\uE130",
-  'person-filled': "\uE131",
-  'personadd-filled': "\uE132",
-  'phone': "\uE200",
-  'email': "\uE201",
-  'chatbubble': "\uE202",
-  'chatboxes': "\uE203",
-  'phone-filled': "\uE230",
-  'email-filled': "\uE231",
-  'chatbubble-filled': "\uE232",
-  'chatboxes-filled': "\uE233",
-  'weibo': "\uE260",
-  'weixin': "\uE261",
-  'pengyouquan': "\uE262",
-  'chat': "\uE263",
-  'qq': "\uE264",
-  'videocam': "\uE300",
-  'camera': "\uE301",
-  'mic': "\uE302",
-  'location': "\uE303",
-  'mic-filled': "\uE332",
-  'speech': "\uE332",
-  'location-filled': "\uE333",
-  'micoff': "\uE360",
-  'image': "\uE363",
-  'map': "\uE364",
-  'compose': "\uE400",
-  'trash': "\uE401",
-  'upload': "\uE402",
-  'download': "\uE403",
-  'close': "\uE404",
-  'redo': "\uE405",
-  'undo': "\uE406",
-  'refresh': "\uE407",
-  'star': "\uE408",
-  'plus': "\uE409",
-  'minus': "\uE410",
-  'circle': "\uE411",
-  'checkbox': "\uE411",
-  'close-filled': "\uE434",
-  'clear': "\uE434",
-  'refresh-filled': "\uE437",
-  'star-filled': "\uE438",
-  'plus-filled': "\uE439",
-  'minus-filled': "\uE440",
-  'circle-filled': "\uE441",
-  'checkbox-filled': "\uE442",
-  'closeempty': "\uE460",
-  'refreshempty': "\uE461",
-  'reload': "\uE462",
-  'starhalf': "\uE463",
-  'spinner': "\uE464",
-  'spinner-cycle': "\uE465",
-  'search': "\uE466",
-  'plusempty': "\uE468",
-  'forward': "\uE470",
-  'back': "\uE471",
-  'left-nav': "\uE471",
-  'checkmarkempty': "\uE472",
-  'home': "\uE500",
-  'navigate': "\uE501",
-  'gear': "\uE502",
-  'paperplane': "\uE503",
-  'info': "\uE504",
-  'help': "\uE505",
-  'locked': "\uE506",
-  'more': "\uE507",
-  'flag': "\uE508",
-  'home-filled': "\uE530",
-  'gear-filled': "\uE532",
-  'info-filled': "\uE534",
-  'help-filled': "\uE535",
-  'more-filled': "\uE537",
-  'settings': "\uE560",
-  'list': "\uE562",
-  'bars': "\uE563",
-  'loop': "\uE565",
-  'paperclip': "\uE567",
-  'eye': "\uE568",
-  'arrowup': "\uE580",
-  'arrowdown': "\uE581",
-  'arrowleft': "\uE582",
-  'arrowright': "\uE583",
-  'arrowthinup': "\uE584",
-  'arrowthindown': "\uE585",
-  'arrowthinleft': "\uE586",
-  'arrowthinright': "\uE587",
-  'pulldown': "\uE588",
-  'closefill': "\uE589",
-  'sound': "\uE590",
-  'scan': "\uE612" };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "首页" }, "pages/index/zcp": { "navigationBarTitleText": "张昌蒲计算器" }, "pages/index/mizhu": { "navigationBarTitleText": "糜竺计算器" }, "pages/about/index": { "navigationBarTitleText": "关于" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+
+/***/ }),
+
+/***/ 8:
+/*!************************************************************************************!*\
+  !*** E:/web/restart-roger/uni-app/zcp-calculator-wxapp/pages.json?{"type":"stat"} ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__7232405" };exports.default = _default;
 
 /***/ })
 

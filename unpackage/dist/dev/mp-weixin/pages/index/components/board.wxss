@@ -1,12 +1,17 @@
 
-.design-button {
+button.data-v-c5f719e2 {
   width: 55px !important;
   margin-bottom: 5px;
   color: grey;
+  font-size: 15px;
+}
+button[type=default][plain].data-v-c5f719e2 {
+	border: 0.5px solid lightgrey;
 }
 
 
-.app-board.data-v-43f3a812 {
+
+.app-board.data-v-c5f719e2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -16,7 +21,7 @@
           justify-content: center;
   margin-bottom: 35px;
 }
-.flex-list.data-v-43f3a812 {
+.flex-list.data-v-c5f719e2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -33,7 +38,7 @@
   padding: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
 }
-.flex-col.data-v-43f3a812 {
+.flex-col.data-v-c5f719e2 {
   width: 25%;
   display: -webkit-box;
   display: -webkit-flex;

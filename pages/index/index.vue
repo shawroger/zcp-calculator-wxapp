@@ -1,90 +1,68 @@
 <template>
-  <div class="app">
-    <app-list :cards="cards"></app-list>
-    <app-result
-      @panel-click="panelClick"
-      :openPanel="openPanel"
-      :result="result"
-    ></app-result>
-    <app-board @click="boardClick"></app-board>
-	<div class="ad-1">
-		<ad unit-id="adunit-4d481dd20e5c6f5c"></ad>
+	<div class="app">
+		<div class="control">
+				<menuItem
+					v-for="item in item" 
+					:key="item.name" 
+					:name="item.name" 
+					:page="item.page" 
+					:img="item.img" 
+				/>
+		
+			</div>
+
+		<div class="ad">
+			<ad unit-id="adunit-31d851ef571fc2e2" ad-type="grid" grid-opacity="0.8" grid-count="5" ad-theme="white"></ad>
+		</div>
 	</div>
-  </div>
 </template>
 
 <script>
-import appList from "./components/list";
-import appResult from "./components/result";
-import appBoard from "./components/board";
-import { zcp } from "@/utils/zcp.js";
+import menuItem from '@/pages/index/components/menu-item.vue';
+
+const item = [
+	{
+		name: '张昌蒲计算器',
+		img: '/static/images/zcp.png',
+		page: '/pages/index/zcp',
+		component: "zcp"
+	},
+	{
+		name: '糜竺计算器',
+		img: '/static/images/mizhu.png',
+		page: '/pages/index/mizhu',
+		component: "mizhu"
+	}
+];
+
 export default {
-  data() {
-    return {
-      cards: [],
-      openPanel: false,
-      result: []
-    };
-  },
-  methods: {
-    arrayToStr(arr) {
-      let str = "";
-      arr
-        .map(v => {
-          for (let i in this.cards) {
-            if (this.cards[i].value === v) {
-              return this.cards[i].name;
-            }
-          }
-        })
-        .forEach(v => {
-          str += v + " + ";
-        });
-      return str.slice(0, -3);
-    },
-    boardClick(e) {
-      if (e.value > 0) {
-        if (this.cards.length < 10) {
-          this.cards.push(e);
-          this.result = [];
-          this.openPanel = false;
-        }
-      } else if (e.value === 0) {
-        this.cards = [];
-        this.result = [];
-        this.openPanel = false;
-      } else if (e.value === -1) {
-        this.cards = this.cards.slice(0, -1);
-        this.result = [];
-        this.openPanel = false;
-      } else {
-        this.openPanel = true;
-        const cardValues = this.cards.map(v => v.value);
-        const result = zcp.filter(zcp.sort(zcp.when(cardValues)));
-        this.result = result.map(v => {
-          const v0 = this.arrayToStr(v[0]);
-          const v1 = this.arrayToStr(v[1]);
-          return [v0, v1];
-        });
-      }
-    },
-    panelClick() {
-      this.openPanel = !this.openPanel;
-    }
-  },
-  components: {
-    appList,
-    appBoard,
-    appResult
-  }
+	data() {
+		return {
+			item,
+		};
+	},
+	components: {
+		menuItem
+	}
 };
 </script>
 
 <style scoped>
+	
 .app {
-  margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh;
 }
-.ad-1 {
-	margin-top: 5px;
+.control {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.ad {  
+	width: 100%;
 }
 </style>

@@ -1,0 +1,1 @@
+<view class="_div"><uni-card vue-id="1" mode="style" title="{{name}}" is-shadow="{{true}}" thumbnail="{{img}}" data-event-opts="{{[['^click',[['changePage']]]]}}" bind:click="__e" bind:__l="__l"></uni-card></view>

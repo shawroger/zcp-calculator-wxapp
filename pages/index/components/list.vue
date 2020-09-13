@@ -4,12 +4,12 @@
 		<div 
 			:key="i" 
 			class="flex-col" 
-			v-for="i in use10cards ? 10 : 8" 
-			:style="{'width': use10cards ? '20%' : '25%'}"
+			v-for="item in cards" 
+			style="width: 20%;"
 		>
         <div class="box">
-          <span :class="[cards[i] ? 'text-set' : 'text-default']">
-            {{ cards[i] ? cards[i].name : "?" }}
+          <span :class="[item ? 'text-set' : 'text-default']">
+            {{ item ? item.name : "?" }}
           </span>
         </div>
       </div>
@@ -25,16 +25,12 @@ export default {
   props: {
     cards: {
       default: () => []
-    }
+    },
   },
   data() {
     return {
-		store: {}
 	};
-  },
-  computed: mapState([
-    'use10cards'
-  ])
+  }, 
 };
 </script>
 
@@ -51,7 +47,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
 }

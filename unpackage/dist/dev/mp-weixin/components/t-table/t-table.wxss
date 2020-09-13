@@ -1,0 +1,15 @@
+
+.t-table.data-v-65b40d7c {
+	width: 100%;
+	border: 1px #d0dee5 solid;
+	border-left: none;
+	border-top: none;
+	box-sizing: border-box;
+}
+.t-table.data-v-65b40d7c t-tr {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+
+
