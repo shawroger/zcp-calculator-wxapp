@@ -1,10 +1,19 @@
 <template>
 	<div class="app-main">
+	
 		<div class="app-element">
 			<app-list :cards="cards.concat(extraCards)"></app-list>
 			<app-result @panel-click="panelClick" :openPanel="openPanel" :result="result" :colText="['分配方案', '牌数']" :forceAll="true"></app-result>
 			<app-board @click="boardClick"></app-board>
 		</div>
+		
+		<uni-popup ref="popup" type="message">
+		    <uni-popup-message 
+				type="warn" 
+				:duration="2000"
+				message="您输入的数据过多,计算量超出允许范围!">
+			</uni-popup-message>
+		</uni-popup>
 		<div class="ad-1">
 			<ad unit-id="adunit-42f0b75787d8e5b9"></ad>
 		</div>
@@ -15,6 +24,12 @@
 import appList from './components/list';
 import appResult from './components/result';
 import appBoard from './components/board';
+
+import uniPopup from '@/components/uni-popup/uni-popup.vue'
+import uniPopupMessage from '@/components/uni-popup/uni-popup-message.vue'
+import uniPopupDialog from '@/components/uni-popup/uni-popup-dialog.vue'
+
+
 import { Mizhu } from '@/utils/mizhu.js';
 import { cards } from '@/utils/card.js';
 
@@ -31,6 +46,11 @@ export default {
 		boardClick(e) {
 			const cardsLen = this.cards.filter(val => val === undefined).length;
 			if (e.value > 0) {
+				if(this.extraCards.length > (5 - 1)) {
+					this.$refs.popup.open();
+					return false;
+				}
+				
 				if (cardsLen > 0) {
 					this.cards[10 - cardsLen] = e;
 					this.result = [];
@@ -49,9 +69,10 @@ export default {
 				} else {
 					this.cards[10 - cardsLen - 1] = undefined;
 					this.result = [];
-					this.openPanel = false;
 				}
-			} else { 		
+				
+				this.openPanel = false;
+			} else { 	
 				this.result = 
 					Mizhu.calc(
 						this.cards.
@@ -75,7 +96,10 @@ export default {
 	components: {
 		appList,
 		appBoard,
-		appResult
+		appResult,
+		uniPopup,
+		uniPopupMessage,
+		uniPopupDialog
 	}
 };
 </script>

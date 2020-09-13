@@ -159,8 +159,23 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var _mizhu = __webpack_require__(/*! @/utils/mizhu.js */ 38);
-var _card = __webpack_require__(/*! @/utils/card.js */ 39);var appList = function appList() {return Promise.all(/*! import() | pages/index/components/list */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/index/components/list")]).then(__webpack_require__.bind(null, /*! ./components/list */ 55));};var appResult = function appResult() {return __webpack_require__.e(/*! import() | pages/index/components/result */ "pages/index/components/result").then(__webpack_require__.bind(null, /*! ./components/result */ 62));};var appBoard = function appBoard() {return Promise.all(/*! import() | pages/index/components/board */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/index/components/board")]).then(__webpack_require__.bind(null, /*! ./components/board */ 71));};var _default =
+var _card = __webpack_require__(/*! @/utils/card.js */ 39);var appList = function appList() {return Promise.all(/*! import() | pages/index/components/list */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/index/components/list")]).then(__webpack_require__.bind(null, /*! ./components/list */ 55));};var appResult = function appResult() {return __webpack_require__.e(/*! import() | pages/index/components/result */ "pages/index/components/result").then(__webpack_require__.bind(null, /*! ./components/result */ 62));};var appBoard = function appBoard() {return Promise.all(/*! import() | pages/index/components/board */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/index/components/board")]).then(__webpack_require__.bind(null, /*! ./components/board */ 71));};var uniPopup = function uniPopup() {return Promise.all(/*! import() | components/uni-popup/uni-popup */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-popup/uni-popup")]).then(__webpack_require__.bind(null, /*! @/components/uni-popup/uni-popup.vue */ 186));};var uniPopupMessage = function uniPopupMessage() {return __webpack_require__.e(/*! import() | components/uni-popup/uni-popup-message */ "components/uni-popup/uni-popup-message").then(__webpack_require__.bind(null, /*! @/components/uni-popup/uni-popup-message.vue */ 195));};var uniPopupDialog = function uniPopupDialog() {return __webpack_require__.e(/*! import() | components/uni-popup/uni-popup-dialog */ "components/uni-popup/uni-popup-dialog").then(__webpack_require__.bind(null, /*! @/components/uni-popup/uni-popup-dialog.vue */ 202));};var _default =
 
 {
   data: function data() {
@@ -175,6 +190,11 @@ var _card = __webpack_require__(/*! @/utils/card.js */ 39);var appList = functio
     boardClick: function boardClick(e) {
       var cardsLen = this.cards.filter(function (val) {return val === undefined;}).length;
       if (e.value > 0) {
+        if (this.extraCards.length > 5 - 1) {
+          this.$refs.popup.open();
+          return false;
+        }
+
         if (cardsLen > 0) {
           this.cards[10 - cardsLen] = e;
           this.result = [];
@@ -193,8 +213,9 @@ var _card = __webpack_require__(/*! @/utils/card.js */ 39);var appList = functio
         } else {
           this.cards[10 - cardsLen - 1] = undefined;
           this.result = [];
-          this.openPanel = false;
         }
+
+        this.openPanel = false;
       } else {
         this.result =
         _mizhu.Mizhu.calc(
@@ -219,7 +240,10 @@ var _card = __webpack_require__(/*! @/utils/card.js */ 39);var appList = functio
   components: {
     appList: appList,
     appBoard: appBoard,
-    appResult: appResult } };exports.default = _default;
+    appResult: appResult,
+    uniPopup: uniPopup,
+    uniPopupMessage: uniPopupMessage,
+    uniPopupDialog: uniPopupDialog } };exports.default = _default;
 
 /***/ }),
 

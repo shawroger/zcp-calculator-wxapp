@@ -2736,6 +2736,72 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
+/***/ 191:
+/*!***************************************************************************************!*\
+  !*** E:/web/restart-roger/uni-app/zcp-calculator-wxapp/components/uni-popup/popup.js ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _message = _interopRequireDefault(__webpack_require__(/*! ./message.js */ 192));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+// 定义 type 类型:弹出类型：top/bottom/center
+var config = {
+  // 顶部弹出
+  top: 'top',
+  // 底部弹出
+  bottom: 'bottom',
+  // 居中弹出
+  center: 'center',
+  // 消息提示
+  message: 'top',
+  // 对话框
+  dialog: 'center',
+  // 分享
+  share: 'bottom' };var _default =
+
+
+{
+  data: function data() {
+    return {
+      config: config };
+
+  },
+  mixins: [_message.default] };exports.default = _default;
+
+/***/ }),
+
+/***/ 192:
+/*!*****************************************************************************************!*\
+  !*** E:/web/restart-roger/uni-app/zcp-calculator-wxapp/components/uni-popup/message.js ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  created: function created() {
+    if (this.type === 'message') {
+      // 不显示遮罩
+      this.maskShow = false;
+      // 获取子组件对象
+      this.childrenMsg = null;
+    }
+  },
+  methods: {
+    customOpen: function customOpen() {
+      if (this.childrenMsg) {
+        this.childrenMsg.open();
+      }
+    },
+    customClose: function customClose() {
+      if (this.childrenMsg) {
+        this.childrenMsg.close();
+      }
+    } } };exports.default = _default;
+
+/***/ }),
+
 /***/ 2:
 /*!******************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js ***!
@@ -10144,7 +10210,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "首页" }, "pages/index/zcp": { "navigationBarTitleText": "张昌蒲计算器" }, "pages/index/mizhu": { "navigationBarTitleText": "糜竺计算器" }, "pages/about/index": { "navigationBarTitleText": "关于" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "首页", "usingComponents": { "menu-item": "/pages/index/components/menu-item" }, "usingAutoImportComponents": {} }, "pages/index/zcp": { "navigationBarTitleText": "张昌蒲计算器", "usingComponents": { "app-list": "/pages/index/components/list", "app-board": "/pages/index/components/board", "app-result": "/pages/index/components/result" }, "usingAutoImportComponents": {} }, "pages/index/mizhu": { "navigationBarTitleText": "糜竺计算器", "usingComponents": { "app-list": "/pages/index/components/list", "app-board": "/pages/index/components/board", "app-result": "/pages/index/components/result", "uni-popup": "/components/uni-popup/uni-popup", "uni-popup-message": "/components/uni-popup/uni-popup-message", "uni-popup-dialog": "/components/uni-popup/uni-popup-dialog" }, "usingAutoImportComponents": {} }, "pages/about/index": { "navigationBarTitleText": "关于", "usingComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item", "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar" }, "usingAutoImportComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 
