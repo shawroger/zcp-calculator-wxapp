@@ -1,8 +1,6 @@
 {
-  "navigationBarTitleText": "张昌蒲计算器",
+  "navigationBarTitleText": "首页",
   "usingComponents": {
-    "app-list": "/pages/index/components/list",
-    "app-board": "/pages/index/components/board",
-    "app-result": "/pages/index/components/result"
+    "menu-item": "/pages/index/components/menu-item"
   }
 }

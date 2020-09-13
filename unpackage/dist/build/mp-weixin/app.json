@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/index/zcp",
+    "pages/index/mizhu",
     "pages/about/index"
   ],
   "subPackages": [],
@@ -31,12 +33,6 @@
     ],
     "position": "bottom"
   },
-  "usingComponents": {
-    "van-cell": "/wxcomponents/vant/cell/index",
-    "van-cell-group": "/wxcomponents/vant/cell-group/index",
-    "van-button": "/wxcomponents/vant/button/index",
-    "van-notice-bar": "/wxcomponents/vant/notice-bar/index",
-    "van-switch": "/wxcomponents/vant/switch/index"
-  },
+  "usingComponents": {},
   "sitemapLocation": "sitemap.json"
 }

@@ -52,7 +52,7 @@ button[type=default][plain] {
 <style scoped>
 .app-board {
   display: flex;
-  margin: 15px;
+  margin: 10px;
   justify-content: center;
   margin-bottom: 35px;
 }
@@ -61,13 +61,14 @@ button[type=default][plain] {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  width: 85%;
-  padding: 15px;
+  width: 86%;
+  padding: 20px 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
 }
 .flex-col {
   width: 25%;
   display: flex;
   justify-content: center;
+  margin: 5px 0px;
 }
 </style>
