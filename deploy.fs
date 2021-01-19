@@ -1,8 +1,8 @@
 @Main
 {
-	@Prinln("准备上传到仓库")
+	@Println("准备上传到仓库")
 	@Command("git add .")
-	@Command("git commit -m add files")
+	@Command("git commit -m add-readme.md")
 	@Command("git push origin master")
-	@Prinln("上传完成")
+	@Println("上传完成")
 }
