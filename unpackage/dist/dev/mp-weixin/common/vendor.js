@@ -737,7 +737,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -8268,7 +8268,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8289,14 +8289,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -8372,7 +8372,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -9030,18 +9030,18 @@ module.exports = g;
 /***/ }),
 
 /***/ 38:
-/*!************************************************************************!*\
-  !*** E:/web/restart-roger/uni-app/zcp-calculator-wxapp/utils/mizhu.js ***!
-  \************************************************************************/
+/*!***********************************************************************!*\
+  !*** E:/web/restart-roger/uni-app/zcp-calculator-wxapp/utils/more.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.filterSameItem = filterSameItem;exports.Mizhu = exports.allErgodic = exports.ergodic = exports.produceOrder = exports.chooseCards = exports.copyArr = exports.sum = void 0;function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}
+Object.defineProperty(exports, "__esModule", { value: true });exports.filterSameItem = filterSameItem;exports.ZL = exports.Mizhu = exports.allErgodic = exports.ergodic = exports.produceOrder = exports.chooseCards = exports.copyArr = exports.sum = void 0;function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}
 /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       * 进行数组求和
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       * @param arr 目标数组
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    * 进行数组求和
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    * @param arr 目标数组
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    */
 var sum = function sum(arr) {return (
     arr.reduce(function (total, currentValue) {return total + currentValue;}, 0));};
 
@@ -9194,7 +9194,35 @@ Mizhu = /*#__PURE__*/function () {function Mizhu() {_classCallCheck(this, Mizhu)
 
     arr) {
       return new Logic().calc(arr, 13);
-    } }]);return Mizhu;}();exports.Mizhu = Mizhu;_defineProperty(Mizhu, "getLogic", function () {return new Logic();});
+    } }]);return Mizhu;}();exports.Mizhu = Mizhu;_defineProperty(Mizhu, "getLogic", function () {return new Logic();});var
+
+
+
+
+ZL = /*#__PURE__*/function () {function ZL() {_classCallCheck(this, ZL);}_createClass(ZL, null, [{ key: "calc", value: function calc(
+
+
+    arr) {
+      var target = 36;
+      var result = [];
+      var val = chooseCards(arr);
+      if (sum(arr) === target) {
+        result.push(arr);
+      }var _iteratorNormalCompletion3 = true;var _didIteratorError3 = false;var _iteratorError3 = undefined;try {
+        for (var _iterator3 = val[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {var item = _step3.value;
+          if (0 <= target - sum(item[0]) && target - sum(item[0]) <= 13) {
+            result.push(item[0]);
+          }
+
+          if (0 <= target - sum(item[1]) && target - sum(item[1]) <= 13) {
+            result.push(item[1]);
+          }
+        }} catch (err) {_didIteratorError3 = true;_iteratorError3 = err;} finally {try {if (!_iteratorNormalCompletion3 && _iterator3.return != null) {_iterator3.return();}} finally {if (_didIteratorError3) {throw _iteratorError3;}}}
+
+      return filterSameItem(result).
+      sort(function (m, n) {return n.length - m.length;}).
+      map(function (v) {return [v, target - sum(v)];});
+    } }]);return ZL;}();exports.ZL = ZL;_defineProperty(ZL, "getLogic", function () {return new Logic();});
 
 /***/ }),
 
@@ -10144,7 +10172,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "首页", "usingComponents": { "menu-item": "/pages/index/components/menu-item" }, "usingAutoImportComponents": {} }, "pages/index/zcp": { "navigationBarTitleText": "张昌蒲计算器", "usingComponents": { "app-list": "/pages/index/components/list", "app-board": "/pages/index/components/board", "app-result": "/pages/index/components/result" }, "usingAutoImportComponents": {} }, "pages/index/mizhu": { "navigationBarTitleText": "糜竺计算器", "usingComponents": { "app-list": "/pages/index/components/list", "app-board": "/pages/index/components/board", "app-result": "/pages/index/components/result", "uni-popup": "/components/uni-popup/uni-popup", "uni-popup-message": "/components/uni-popup/uni-popup-message", "uni-popup-dialog": "/components/uni-popup/uni-popup-dialog" }, "usingAutoImportComponents": {} }, "pages/about/index": { "navigationBarTitleText": "关于", "usingComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item", "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar" }, "usingAutoImportComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "首页", "usingComponents": { "menu-item": "/pages/index/components/menu-item" }, "usingAutoImportComponents": {} }, "pages/index/zcp": { "navigationBarTitleText": "张昌蒲计算器", "usingComponents": { "app-list": "/pages/index/components/list", "app-board": "/pages/index/components/board", "app-result": "/pages/index/components/result" }, "usingAutoImportComponents": {} }, "pages/index/mizhu": { "navigationBarTitleText": "糜竺计算器", "usingComponents": { "app-list": "/pages/index/components/list", "app-board": "/pages/index/components/board", "app-result": "/pages/index/components/result", "uni-popup": "/components/uni-popup/uni-popup", "uni-popup-message": "/components/uni-popup/uni-popup-message", "uni-popup-dialog": "/components/uni-popup/uni-popup-dialog" }, "usingAutoImportComponents": {} }, "pages/about/index": { "navigationBarTitleText": "关于", "usingComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item", "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar" }, "usingAutoImportComponents": {} }, "pages/index/zhangliang": { "navigationBarTitleText": "张梁计算器", "usingComponents": { "app-list": "/pages/index/components/list", "app-board": "/pages/index/components/board", "app-result": "/pages/index/components/result", "uni-popup": "/components/uni-popup/uni-popup", "uni-popup-message": "/components/uni-popup/uni-popup-message", "uni-popup-dialog": "/components/uni-popup/uni-popup-dialog" }, "usingAutoImportComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 

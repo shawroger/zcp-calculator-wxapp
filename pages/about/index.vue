@@ -5,7 +5,8 @@
 			<div class="img-control"><img src="/static/images/logo.png" /></div>
 
 			<uni-list>
-				<uni-list-item title="应用版本" rightText="4.0.0" />
+				<uni-list-item title="应用版本" rightText="4.1.0" />
+				<uni-list-item title="更新日期" rightText="2021.01.19" />
 				<uni-list-item title="小程序开发者" rightText="蒸蒸日上欧" />
 				<uni-list-item title="只展示前三项筛选结果" :showSwitch="true" :switchChecked="allSelect" @switchChange="setAllSelect" />
 			</uni-list>

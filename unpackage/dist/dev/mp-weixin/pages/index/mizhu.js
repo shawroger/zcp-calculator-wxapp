@@ -174,7 +174,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _mizhu = __webpack_require__(/*! @/utils/mizhu.js */ 38);
+var _more = __webpack_require__(/*! @/utils/more.js */ 38);
 var _card = __webpack_require__(/*! @/utils/card.js */ 39);var appList = function appList() {return Promise.all(/*! import() | pages/index/components/list */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/index/components/list")]).then(__webpack_require__.bind(null, /*! ./components/list */ 55));};var appResult = function appResult() {return __webpack_require__.e(/*! import() | pages/index/components/result */ "pages/index/components/result").then(__webpack_require__.bind(null, /*! ./components/result */ 62));};var appBoard = function appBoard() {return Promise.all(/*! import() | pages/index/components/board */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/index/components/board")]).then(__webpack_require__.bind(null, /*! ./components/board */ 71));};var uniPopup = function uniPopup() {return Promise.all(/*! import() | components/uni-popup/uni-popup */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-popup/uni-popup")]).then(__webpack_require__.bind(null, /*! @/components/uni-popup/uni-popup.vue */ 80));};var uniPopupMessage = function uniPopupMessage() {return __webpack_require__.e(/*! import() | components/uni-popup/uni-popup-message */ "components/uni-popup/uni-popup-message").then(__webpack_require__.bind(null, /*! @/components/uni-popup/uni-popup-message.vue */ 89));};var uniPopupDialog = function uniPopupDialog() {return __webpack_require__.e(/*! import() | components/uni-popup/uni-popup-dialog */ "components/uni-popup/uni-popup-dialog").then(__webpack_require__.bind(null, /*! @/components/uni-popup/uni-popup-dialog.vue */ 96));};var _default =
 
 {
@@ -218,7 +218,7 @@ var _card = __webpack_require__(/*! @/utils/card.js */ 39);var appList = functio
         this.openPanel = false;
       } else {
         this.result =
-        _mizhu.Mizhu.calc(
+        _more.Mizhu.calc(
         this.cards.
         concat(this.extraCards).
         filter(

@@ -3,7 +3,7 @@
 	
 		<div class="app-element">
 			<app-list :cards="cards.concat(extraCards)"></app-list>
-			<app-result @panel-click="panelClick" :openPanel="openPanel" :result="result" :colText="['分配方案', '分配牌数']" :forceAll="true"></app-result>
+			<app-result @panel-click="panelClick" :openPanel="openPanel" :result="result" :colText="['分配点数', '补充点数']" :forceAll="true"></app-result>
 			<app-board @click="boardClick"></app-board>
 		</div>
 		
@@ -15,7 +15,7 @@
 			</uni-popup-message>
 		</uni-popup>
 		<div class="ad-1">
-			<ad unit-id="adunit-42f0b75787d8e5b9"></ad>
+			<ad unit-id="adunit-d4a513e8fa14367b"></ad>
 		</div>
 	</div>
 </template>
@@ -30,7 +30,7 @@ import uniPopupMessage from '@/components/uni-popup/uni-popup-message.vue'
 import uniPopupDialog from '@/components/uni-popup/uni-popup-dialog.vue'
 
 
-import { Mizhu } from '@/utils/more.js';
+import { ZL } from '@/utils/more.js';
 import { cards } from '@/utils/card.js';
 
 export default {
@@ -72,20 +72,21 @@ export default {
 				}
 				
 				this.openPanel = false;
-			} else { 	
-				this.result = 
-					Mizhu.calc(
-						this.cards.
+			} else { 
+			 
+				const r =  ZL.calc(
+						 this.cards.
 							concat(this.extraCards).
 							filter(
 								v => v !== undefined
-							)
-							.map(v => v.value))		
-							.map(
-								v => [ 
-									v.map(v => cards[Number(v) - 1].name).join(" + "), 
-									v.length
-								]);
+							).map(v => v.value));
+				this.result = r.map(
+					v => [
+						v[0].map(t => cards[Number(t) - 1].name).join(" + "), 
+						v[1] == 0 ? "无" : cards[Number(v[1]) - 1].name
+					]
+				); 
+							 
 				this.openPanel = true;
 			}
 		},

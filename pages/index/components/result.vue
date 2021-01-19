@@ -12,7 +12,7 @@
 						<template v-if="filteredResult.length > 0">
 							<t-tr v-for="(v, k) in filteredResult" :key="k">
 								<t-td>{{ v[0] }}</t-td>
-								<t-td v-if="v[1]">{{ v[1] }}</t-td>
+								<t-td v-if="v[1] != undefined">{{ v[1] }}</t-td>
 							</t-tr>
 						</template>
 

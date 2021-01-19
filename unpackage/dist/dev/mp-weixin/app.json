@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/index/zcp",
     "pages/index/mizhu",
+    "pages/index/zhangliang",
     "pages/about/index"
   ],
   "subPackages": [],
@@ -33,6 +34,5 @@
     ],
     "position": "bottom"
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap68.json"
+  "usingComponents": {}
 }

@@ -157,3 +157,31 @@ export class Mizhu {
 		return new Logic().calc(arr, 13);
 	}
 }
+
+ 
+
+export class ZL {
+	static getLogic = () => new Logic();
+
+	static calc(arr) {
+		const target = 36;
+		const result = [];
+		const val = chooseCards(arr);
+		if (sum(arr) === target) {
+			result.push(arr);
+		}
+		for (let item of val) {
+			if (0 <= target - sum(item[0]) && target - sum(item[0]) <= 13) {
+				result.push(item[0]);
+			}
+		
+			if (0 <= target - sum(item[1]) && target - sum(item[1]) <= 13) {
+				result.push(item[1]);
+			}
+		}
+		
+		return filterSameItem(result)
+			.sort((m, n) => n.length - m.length)
+			.map((v) => [v, target - sum(v)]);
+	}
+}

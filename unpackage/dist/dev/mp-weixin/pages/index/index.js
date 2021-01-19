@@ -175,7 +175,12 @@ var item = [
   name: '糜竺计算器',
   img: '/static/images/mizhu.png',
   page: '/pages/index/mizhu',
-  component: "mizhu" }];var _default =
+  component: "mizhu" },
+{
+  name: '张梁计算器',
+  img: '/static/images/zhangliang.png',
+  page: '/pages/index/zhangliang',
+  component: "zhangliang" }];var _default =
 
 
 

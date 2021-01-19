@@ -14,6 +14,11 @@
 		"style": {
 			"navigationBarTitleText": "糜竺计算器"
 		}
+	},{
+		"path": "pages/index/zhangliang",
+		"style": {
+			"navigationBarTitleText": "张梁计算器"
+		}
 	}, {
 		"path": "pages/about/index",
 		"style": {
