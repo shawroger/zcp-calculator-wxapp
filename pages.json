@@ -1,0 +1,59 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "首页"
+		}
+	}, {
+		"path": "pages/index/zcp",
+		"style": {
+			"navigationBarTitleText": "张昌蒲计算器"
+		}
+	}, {
+		"path": "pages/index/mizhu",
+		"style": {
+			"navigationBarTitleText": "王荣 & 糜竺计算器"
+		}
+	},{
+		"path": "pages/index/wangrong",
+		"style": {
+			"navigationBarTitleText": "王荣吉境计算器"
+		}
+	},{
+		"path": "pages/index/zhangliang",
+		"style": {
+			"navigationBarTitleText": "张梁计算器"
+		}
+	}, {
+		"path": "pages/about/index",
+		"style": {
+			"navigationBarTitleText": "关于"
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999",
+		"backgroundColor": "#fafafa",
+		"selectedColor": "#333",
+		"borderStyle": "white",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabs/home.png",
+				"selectedIconPath": "static/tabs/home-active.png"
+			},
+			{
+				"text": "关于",
+				"pagePath": "pages/about/index",
+				"iconPath": "static/tabs/orders.png",
+				"selectedIconPath": "static/tabs/orders-active.png"
+			}
+		],
+		"position": "bottom"
+	}
+}
