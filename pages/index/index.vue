@@ -63,21 +63,25 @@ export default {
 </script>
 
 <style scoped>
-	
 .app {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	min-height: 100vh;
+	box-sizing: border-box;
+	padding-bottom: 24px;
 }
 .control {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	padding: 16px 0;
 }
 .ad {  
 	width: 100%;
+	padding: 0 16px;
+	box-sizing: border-box;
 }
 </style>

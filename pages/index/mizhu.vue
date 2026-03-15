@@ -52,7 +52,7 @@ export default {
 				}
 				
 				if (cardsLen > 0) {
-					this.cards[10 - cardsLen] = e;
+					this.cards.splice(10 - cardsLen, 1, e);
 					this.result = [];
 					this.openPanel = false;
 				} else {
@@ -67,7 +67,7 @@ export default {
 				if (this.extraCards.length > 0) {
 					this.extraCards = this.extraCards.slice(0, -1);
 				} else {
-					this.cards[10 - cardsLen - 1] = undefined;
+					this.cards.splice(10 - cardsLen - 1, 1, undefined);
 					this.result = [];
 				}
 				
@@ -111,12 +111,23 @@ export default {
 	justify-content: space-between;
 	align-items: center;
 	min-height: 100vh;
+	box-sizing: border-box;
+	padding-bottom: 24px;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .app-element {
-	padding-top: 40px;
+	padding-top: 24px;
+	width: 100%;
+	animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 .ad-1 {
 	width: 100%;
+	padding: 0 16px;
+	box-sizing: border-box;
 }
 </style>

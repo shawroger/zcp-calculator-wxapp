@@ -1,14 +1,13 @@
 <template>
 	<div class="app-about">
 		<div class="about-header">
-			<uni-notice-bar text="新增“王荣吉境计算器”" showClose="true" showIcon="true" />
-			<uni-notice-bar text="修复“张梁计算器”计算问题" showClose="true" showIcon="true" />
+			<uni-notice-bar text="优化计算器 UI”" showClose="true" showIcon="true" />
 			<div class="img-control"><img src="/static/images/logo.png" /></div>
 
 			<uni-list>
-				<uni-list-item title="应用版本" rightText="4.2.0" />
+				<uni-list-item title="应用版本" rightText="4.2.1" />
 				<uni-list-item title="程序开发" rightText="Roger" />
-				<uni-list-item title="更新日期" rightText="2022.06.18" />
+				<uni-list-item title="更新日期" rightText="2026-03-15" />
 				<uni-list-item title="展示至多前三项筛选结果" :showSwitch="true" :switchChecked="allSelect" @switchChange="setAllSelect" />
 			</uni-list>
 		</div>
@@ -37,31 +36,59 @@ export default {
 };
 </script>
 <style scoped>
-
 .app-about {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	min-height: 100vh;
+	box-sizing: border-box;
+	padding-bottom: 24px;
 }
 
-	
 .about-header {
 	width: 100%;
 }
 .img-control {
 	display: flex;
 	justify-content: center;
-	margin: 30px 0px;
+	margin: 40px 0px 32px 0px;
 	padding: 5px;
 }
 .img-control img {
-	border-radius: 50%;
-	width: 85px;
-	height: 85px; 
+	border-radius: 20px;
+	width: 88px;
+	height: 88px; 
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 .ad-2 {  
 	width: 100%;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+::v-deep .uni-noticebar {
+    margin: 16px 16px 0 16px !important;
+    border-radius: 12px !important;
+}
+::v-deep .uni-list {
+    margin: 0 16px !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+}
+::v-deep .uni-list:before, ::v-deep .uni-list:after {
+    display: none !important;
+}
+::v-deep .uni-list-item__container {
+    padding: 16px !important;
+}
+::v-deep .uni-list-item__content-title {
+    color: #475569 !important;
+    font-size: 15px !important;
+}
+::v-deep .uni-list-item__extra-text {
+    color: #0f172a !important;
+    font-weight: 500 !important;
 }
 </style>
